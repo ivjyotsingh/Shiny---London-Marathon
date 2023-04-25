@@ -203,6 +203,14 @@
       "Hash": "3177a5a16c243adc199ba33117bd9657",
       "Requirements": []
     },
+    "clipr": {
+      "Package": "clipr",
+      "Version": "0.8.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "3f038e5ac7f41d4ac41ce658c85e3042",
+      "Requirements": []
+    },
     "codetools": {
       "Package": "codetools",
       "Version": "0.2-18",
@@ -268,6 +276,20 @@
       "Repository": "CRAN",
       "Hash": "e8a1e41acf02548751f45c718d55aa6a",
       "Requirements": []
+    },
+    "credentials": {
+      "Package": "credentials",
+      "Version": "1.3.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "93762d0a34d78e6a025efdbfb5c6bb41",
+      "Requirements": [
+        "askpass",
+        "curl",
+        "jsonlite",
+        "openssl",
+        "sys"
+      ]
     },
     "crosstalk": {
       "Package": "crosstalk",
@@ -451,6 +473,21 @@
       "Hash": "15e9634c0fcd294799e9b2e929ed1b86",
       "Requirements": []
     },
+    "gert": {
+      "Package": "gert",
+      "Version": "1.9.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "9122b3958e749badb5c939f498038b57",
+      "Requirements": [
+        "askpass",
+        "credentials",
+        "openssl",
+        "rstudioapi",
+        "sys",
+        "zip"
+      ]
+    },
     "ggplot2": {
       "Package": "ggplot2",
       "Version": "3.4.2",
@@ -471,6 +508,29 @@
         "vctrs",
         "withr"
       ]
+    },
+    "gh": {
+      "Package": "gh",
+      "Version": "1.4.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "03533b1c875028233598f848fda44c4c",
+      "Requirements": [
+        "cli",
+        "gitcreds",
+        "httr2",
+        "ini",
+        "jsonlite",
+        "rlang"
+      ]
+    },
+    "gitcreds": {
+      "Package": "gitcreds",
+      "Version": "0.1.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ab08ac61f3e1be454ae21911eb8bc2fe",
+      "Requirements": []
     },
     "glue": {
       "Package": "glue",
@@ -580,6 +640,32 @@
         "mime",
         "openssl"
       ]
+    },
+    "httr2": {
+      "Package": "httr2",
+      "Version": "0.2.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "5c09fe33064978ede54de42309c8b532",
+      "Requirements": [
+        "R6",
+        "cli",
+        "curl",
+        "glue",
+        "magrittr",
+        "openssl",
+        "rappdirs",
+        "rlang",
+        "withr"
+      ]
+    },
+    "ini": {
+      "Package": "ini",
+      "Version": "0.3.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "6154ec2223172bce8162d4153cda21f7",
+      "Requirements": []
     },
     "isoband": {
       "Package": "isoband",
@@ -1223,6 +1309,34 @@
         "xfun"
       ]
     },
+    "usethis": {
+      "Package": "usethis",
+      "Version": "2.1.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "a67a22c201832b12c036cc059f1d137d",
+      "Requirements": [
+        "cli",
+        "clipr",
+        "crayon",
+        "curl",
+        "desc",
+        "fs",
+        "gert",
+        "gh",
+        "glue",
+        "jsonlite",
+        "lifecycle",
+        "purrr",
+        "rappdirs",
+        "rlang",
+        "rprojroot",
+        "rstudioapi",
+        "whisker",
+        "withr",
+        "yaml"
+      ]
+    },
     "utf8": {
       "Package": "utf8",
       "Version": "1.2.3",
@@ -1267,6 +1381,14 @@
         "rlang",
         "tibble"
       ]
+    },
+    "whisker": {
+      "Package": "whisker",
+      "Version": "0.4.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c6abfa47a46d281a7d5159d0a8891e88",
+      "Requirements": []
     },
     "withr": {
       "Package": "withr",
@@ -1314,6 +1436,14 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "0d0056cc5383fbc240ccd0cb584bf436",
+      "Requirements": []
+    },
+    "zip": {
+      "Package": "zip",
+      "Version": "2.3.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "d98c94dacb7e0efcf83b0a133a705504",
       "Requirements": []
     }
   }
