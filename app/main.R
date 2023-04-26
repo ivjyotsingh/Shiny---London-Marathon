@@ -6,7 +6,8 @@ box::use(
 
 box::use(
   app/view/CourseRecords/crTab,
-  app/view/WinnerNationalities/wnTab
+  app/view/WinnerNationalities/wnTab,
+  app/view/Participation/pTab
 )
 
 #' @export
@@ -17,7 +18,8 @@ ui <- function(id) {
     "London Marathon",
     theme = bs_theme(bootswatch = "flatly"),
     crTab$ui(ns("crtab")),
-    wnTab$ui(ns("wntab"))
+    wnTab$ui(ns("wntab")),
+    pTab$ui(ns("ptab"))
   )
 }
 
@@ -27,5 +29,6 @@ server <- function(id) {
   moduleServer(id, function(input, output, session) {
     crTab$server("crtab")
     wnTab$server("wntab")
+    pTab$server("ptab")
   })
 }
