@@ -57,9 +57,10 @@ server <- function(id) {
         e_charts(Nationality) |>
         e_bar(Count) |>
         e_flip_coords() |>
-        e_tooltip(trigger = "item") |>
+        e_tooltip(trigger = "item",
+                  backgroundColor  = "rgba(50,50,50,0.1)") |>
         e_legend(show = FALSE) |>
-        e_theme("wonderland")
+        e_theme("london")
 
       
     })

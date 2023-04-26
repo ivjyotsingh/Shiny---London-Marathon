@@ -47,8 +47,9 @@ server <- function(id) {
         e_line(Starters) |>
         e_line(Finishers) |>
         e_x_axis(scale = TRUE) |>
-        e_tooltip(trigger = "axis") |>
-        e_theme("wonderland")
+        e_tooltip(trigger = "axis",
+                  backgroundColor  = "rgba(50,50,50,0.1)") |>
+        e_theme("london")
       
     })
     

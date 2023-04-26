@@ -55,8 +55,8 @@ server <- function(id) {
               select(Year,Time) |>
               unique() |>
               ggplot() +
-              geom_line(mapping = aes(x = Year, y = Time),color = "darkgreen") +
-              geom_point(mapping = aes(x = Year, y = Time),color = "darkgreen") +
+              geom_line(mapping = aes(x = Year, y = Time)) +
+              geom_point(mapping = aes(x = Year, y = Time)) +
               theme_classic()
             
               ggplotly(plot)
