@@ -7,7 +7,7 @@ box::use(
   bslib[card,card_header,card_body_fill],
   dplyr[select,filter],
   echarts4r[e_charts,e_line,e_x_axis,e_tooltip,
-            echarts4rOutput,renderEcharts4r]
+            echarts4rOutput,renderEcharts4r,e_theme]
 )
 
 
@@ -47,7 +47,8 @@ server <- function(id) {
         e_line(Starters) |>
         e_line(Finishers) |>
         e_x_axis(scale = TRUE) |>
-        e_tooltip(trigger = "axis")
+        e_tooltip(trigger = "axis") |>
+        e_theme("wonderland")
       
     })
     

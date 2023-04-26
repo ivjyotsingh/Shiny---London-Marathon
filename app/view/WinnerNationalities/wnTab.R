@@ -11,7 +11,8 @@ box::use(
   bslib[card,card_header,card_body_fill],
   dplyr[filter,select,group_by,summarise,arrange,n],
   echarts4r[e_charts,e_bar,e_flip_coords,e_tooltip,
-            echarts4rOutput,renderEcharts4r,e_legend]
+            echarts4rOutput,renderEcharts4r,e_legend,
+            e_theme]
 )
 
 
@@ -57,7 +58,8 @@ server <- function(id) {
         e_bar(Count) |>
         e_flip_coords() |>
         e_tooltip(trigger = "item") |>
-        e_legend(show = FALSE)
+        e_legend(show = FALSE) |>
+        e_theme("wonderland")
 
       
     })
