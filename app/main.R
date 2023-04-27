@@ -7,7 +7,8 @@ box::use(
 box::use(
   app/view/CourseRecords/crTab,
   app/view/WinnerNationalities/wnTab,
-  app/view/Participation/pTab
+  app/view/Participation/pTab,
+  app/view/Charity/cTab
 )
 
 #' @export
@@ -19,7 +20,8 @@ ui <- function(id) {
     theme = bs_theme(bootswatch = "flatly"),
     crTab$ui(ns("crtab")),
     wnTab$ui(ns("wntab")),
-    pTab$ui(ns("ptab"))
+    pTab$ui(ns("ptab")),
+    cTab$ui(ns("ctab"))
   )
 }
 
@@ -30,5 +32,6 @@ server <- function(id) {
     crTab$server("crtab")
     wnTab$server("wntab")
     pTab$server("ptab")
+    cTab$server("ctab")
   })
 }
